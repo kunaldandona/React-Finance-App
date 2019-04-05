@@ -23,6 +23,10 @@
   color: #61dafb;
 }
 
+.form-inline {
+  display: inline;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -31,3 +35,26 @@
     transform: rotate(360deg);
   }
 }
+ 
+.StockListItem {
+  box-shadow: border-box;
+  flex: 0 0 98%;
+  list-style: none;
+  display: flex;
+  padding: 2rem;
+  margin: .25rem;
+  text-align: left;
+  flex-flow: column wrap;
+  background-color: #fefefe;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.StockListItem > * {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.StockListItem > * span{
+  color: #757575;
+  font-weight: 400;
+}
+
